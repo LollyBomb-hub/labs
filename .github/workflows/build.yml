@@ -31,5 +31,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: labs.zip
-          path: builds/default
+          name: labs.exe
+          path: builds/default/labs.exe
