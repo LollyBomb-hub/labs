@@ -15,7 +15,7 @@ jobs:
           submodules: true
 
       - uses: lukka/get-cmake@latest
-      - uses: lukka/get-vcpkg
+      - uses: lukka/get-vcpkg@e5c280005e195c57a9db9433f1959114ca9b3bc3
       - name: Restore artifacts, or setup vcpkg for building artifacts
         uses: lukka/run-vcpkg@v10
         id: runvcpkg
