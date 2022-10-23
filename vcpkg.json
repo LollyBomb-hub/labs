@@ -1,5 +1,5 @@
 {
-  "name": "labs_msuce",
+  "name": "labs-msuce",
   "version-string": "0.0.2",
   "description": "Лабораторные работы по численным методам. НИУ МГСУ",
   "dependencies": [
