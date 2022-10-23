@@ -25,6 +25,6 @@ jobs:
         id: runcmake
         with:
           cmakeListsTxtPath: '${{ github.workspace }}/CMakeLists.txt'
-          configurePreset: 'default'
-          buildPreset: 'default'
+          configurePreset: default
+          buildPreset: default
           useVcpkgToolchainFile: true
