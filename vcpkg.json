@@ -4,5 +4,9 @@
   "description": "Лабораторные работы по численным методам. НИУ МГСУ",
   "dependencies": [
     "eigen3"
-  ]
+  ],
+  "default-registry": {
+    "kind": "builtin",
+    "baseline": "d4f36d002d300f3265e9a016072d06aab6b86abd"
+  }
 }
