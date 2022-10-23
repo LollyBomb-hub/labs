@@ -15,13 +15,12 @@ jobs:
           submodules: true
 
       - uses: lukka/get-cmake@latest
+      - uses: lukka/get-vcpkg@latest
       - name: Restore artifacts, or setup vcpkg for building artifacts
         uses: lukka/run-vcpkg@v10
         id: runvcpkg
         with:
           runVcpkgInstall: true
-          vcpkgGitCommitId: 9ec9fd4d041e87a051dbd058f79740b273095b03
-          vcpkgGitURL: https://github.com/LollyBomb-hub/vcpkg_labs_dependencies.git
       - name: Run CMake+vcpkg+Ninja
         uses: lukka/run-cmake@v10
         id: runcmake
