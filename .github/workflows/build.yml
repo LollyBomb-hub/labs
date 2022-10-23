@@ -28,3 +28,8 @@ jobs:
           configurePreset: default
           buildPreset: default
           useVcpkgToolchainFile: true
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: labs.zip
+          path: builds/default
