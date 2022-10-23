@@ -21,9 +21,8 @@
 int main() {
     Eigen::SparseMatrix<TYPE> A(3, 3);
     A.coeffRef(0, 0) = 1;
-    A.coeffRef(0, 2) = 1;
-    A.coeffRef(1, 1) = 2;
-    A.coeffRef(2, 2) = 3;
+    A.coeffRef(1, 1) = 1;
+    A.coeffRef(2, 2) = 1;
     const auto x = jacobi(A, {3, 2, 1}, {0, 0, 0}, 1e-3);
     for (const auto idx : x) {
         std::cout << idx << '\n';
